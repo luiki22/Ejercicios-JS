@@ -5,23 +5,16 @@ const products = [{name: 'Gorra de rodilla', sellCount: 10},
 {name: 'Inpar de zapatos', sellCount: 6}];
 
 let total = 0;
-
+let sumaTotal;
 for( let i = 0; i < products.length; i++){
 
 
 
     total = products[i].sellCount;
 
+    sumaTotal = total;
 
-   
-
-    // if (products[i].sellCount){
-
-    
-        
-        
-    //     console.log(products[i].sellCount);
-    // } 
 
 }
-console.log(total);       
+      
+console.log(sumaTotal); 
