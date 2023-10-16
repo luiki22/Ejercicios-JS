@@ -1,7 +1,6 @@
 const RickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 
-RickAndMortyCharacters.sort();
-RickAndMortyCharacters.shift();
+RickAndMortyCharacters.splice(1, 1);
 
 console.log(RickAndMortyCharacters);
 

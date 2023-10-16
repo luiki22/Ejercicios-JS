@@ -5,10 +5,15 @@ const movies = [
     {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ]
 
+
  
-for( categories of movies){
+for( let categories of movies){
+    
     let newArray = categories.categories;
-    console.log(newArray);
+
+    console.log(categories.categories);
+
+    
 }
 
 
