@@ -38,46 +38,41 @@ for( const user of users){
     
     for(key in user.favoritesSounds){
 
-        let contadorKey = key;
-        
-
         if(key === 'waves'){
-            contadorKey = key;
-            newArray.push('waves');
             
+            newArray.push('waves');
         }
-
         if(key === 'rain'){
 
-            contadorKey = key;
-            newArray.push('rain')
-             
+            
+            newArray.push('rain');
+    
         }
 
         if(key === 'firecamp'){
 
-            contadorKey = key;
+            
             newArray.push('firecamp');
-           
+    
         }
 
         if(key === 'shower'){
 
-            contadorKey = key;
+            
             newArray.push('shower');
-           
+    
         }
 
         if(key === 'train'){
 
-            contadorKey = key;
-            newArray.push('train');
             
+            newArray.push('train');
+    
         }
 
         if(key === 'wind'){
 
-            contadorKey = key;
+            
             newArray.push('wind');
     
         }
@@ -86,8 +81,6 @@ for( const user of users){
 
 
 }
-console.log(newArray);
-
 const result = {};
 
 newArray.forEach((value) => {

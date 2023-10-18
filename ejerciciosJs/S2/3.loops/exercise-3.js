@@ -7,20 +7,17 @@ const placesToTravel = [{id: 5, name: 'Japan'},
 
 
 
-for (let i = 0; i <= placesToTravel.length; i++){
+for (let i = 0; i < placesToTravel.length; i++){
 
     if(placesToTravel[i].id === 11 || placesToTravel[i].id === 40){
 
-        placesToTravel.splice(0,1);
-
-    
-
+        placesToTravel.splice(i, 1);
+        i--;
 
     }
    
-    console.log(placesToTravel[i])
 }
 
 
-
+console.log(placesToTravel);
 

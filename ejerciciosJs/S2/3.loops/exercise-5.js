@@ -7,7 +7,7 @@ const toys = [{id: 5, name: 'Buzz MyYear', sellCount: 10},
 
 
 for(let toy of toys){
-    if(toy.sellCount >= 15){
+    if(toy.sellCount > 15){
         popularToys.push(toy.name);
     }  
 }

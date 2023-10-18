@@ -7,15 +7,33 @@ const movies = [
 
 
  
-for( let categories of movies){
-    
-    let newArray = categories.categories;
+let newArray = [];
 
-    console.log(categories.categories);
+for(const movie of movies){
+    for(key in movie.categories){
 
+        if(!newArray.includes('comedia')){
+            newArray.push('comedia')
+        }
+
+        if(!newArray.includes('aventura')){
+            newArray.push('aventura');
+        }
+
+        if(!newArray.includes('acción')){
+            newArray.push('acción');
+        }
+        if(!newArray.includes('thriller')){
+            newArray.push('thriller');
+        }
+        if(!newArray.includes('animación')){
+            newArray.push('animación');
+        }
+ 
+    }
     
 }
 
-
+console.log(newArray)
 
 
