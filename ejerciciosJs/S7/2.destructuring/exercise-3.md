@@ -5,4 +5,5 @@ En base al siguiente javascript, usa destructuring para crear 2 variables iguala
 const animalFunction = () => {
     return {name: 'Bengal Tiger', race: 'Tiger'}
 };
-```
+
+

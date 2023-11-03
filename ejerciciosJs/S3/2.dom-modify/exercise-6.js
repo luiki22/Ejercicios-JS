@@ -1,20 +1,16 @@
 const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 
-for(let app of apps){
+const list$$ = document.createElement('ul');
 
-    document.body.innerHTML=
-
-    `    <ul>
-    <li>Facebook</li>
-    <li>Netflix</li>
-    <li>Instagram</li>
-    <li>Snapchat</li>
-    <li>Twitter</li>
-
-    </ul> `
-
-    
-    
-
+for(app of apps){
+    const item$$ = document.createElement('li');
+    item$$.textContent = app;
+    list$$.appendChild(item$$)
 }
+
+document.body.appendChild(list$$);
+
+    
+
+
 
