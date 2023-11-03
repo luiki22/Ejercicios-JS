@@ -14,7 +14,13 @@ const exams = [
 
 
 const notas = exams.reduce(function(accumulator, nota){
-return accumulator + nota.score;}, 0);
+    if(nota.score >= 5){
+        return accumulator + nota.score;
+    }
+
+    return accumulator;
+
+}, 0);
 
 
 console.log(notas)

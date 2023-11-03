@@ -12,15 +12,14 @@ const mutations = [{name: 'Porompompero', description: 'Hace que el alien pueda 
 {name: 'Andando que es gerundio', description: 'Invoca a un señor mayor como Personal Trainer'}];
 
 
-const alien = aliens.find(function(alien){
+const alienCucu = aliens.find(function(alien){
     return alien.name === 'Cucushumushu';
 })
 
 
-const mutation = mutations.find(function(mutation){
+const mutationPorompero = mutations.find(function(mutation){
     return mutation.name === 'Porompompero';
 })
 
 
-// alien.push(mutation)
-// console.log(alien)
+alienCucu.mutation = mutationPorompero;
